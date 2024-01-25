@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: 4px 3px 2px rgb(1, 1, 1, 0.1);
+    border-radius: 10px;
+    height: 135vh;
+}
+
+.small_title {
+    font-size: 20px;
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.section_a {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 7px
+}
+
+input,
+select,
+textarea {
+    padding: 10px 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    border: 2px solid blue;
+}
+
+.button_Conatiner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: red;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 65px;
+}
+
+button:hover {
+    background-color: white;
+    border: 2px solid blue;
+    transition: 0.2s ease-in-out
+}
+
+.section_Add {
+    grid-column: 1 /span 2;
+}
+
+.section_Add textarea {
+    width: 100%;
+    margin-top: 8px;
+}
+
+@media (max-width:460px) {
+    grid-column: 1 /span 1;
+}
+
+.section_Upload input {
+    padding: 6px;
+    margin-top: 7px;
+}
